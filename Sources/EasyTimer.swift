@@ -18,9 +18,13 @@ extension NSTimeInterval {
     ///
     /// - Parameters:
     ///     - repeats:  Bool representing if timer repeats.
+    ///     - delays:   Bool representing if timer executes immediately
     ///     - block:    Code in block will run in every timer repetition.
     /// - returns: A new NSTimer instance
-    func timer(repeats repeats: Bool, _ block: () -> Void) -> NSTimer {
+    func timer(repeats repeats: Bool, delays: Bool, _ block: () -> Void) -> NSTimer {
+        if !delays {
+            block()
+        }
         if repeats {
             return CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, CFAbsoluteTimeGetCurrent() + self, self, 0, 0) { _ in
                 block()
@@ -41,15 +45,23 @@ extension NSTimeInterval {
     ///     - repeats:  Bool representing if timer repeats.
     ///     - block:    Code in block will run in every timer repetition. (NSTimer available as parameter in block)
     /// - returns: A new NSTimer instance
-    func timer(repeats repeats: Bool, _ block: (NSTimer) -> Void) -> NSTimer {
+    func timer(repeats repeats: Bool, delays: Bool, _ block: (NSTimer) -> Void) -> NSTimer {
         if repeats {
-            return CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, CFAbsoluteTimeGetCurrent() + self, self, 0, 0) { timer in
+            let timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, CFAbsoluteTimeGetCurrent() + self, self, 0, 0) { timer in
                 block(timer)
             }
+            if !delays {
+                block(timer)
+            }
+            return timer
         } else {
-            return CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, CFAbsoluteTimeGetCurrent() + self, 0, 0, 0) { timer in
+            let timer = CFRunLoopTimerCreateWithHandler(kCFAllocatorDefault, CFAbsoluteTimeGetCurrent() + self, 0, 0, 0) { timer in
                 block(timer)
             }
+            if !delays {
+                block(timer)
+            }
+            return timer
         }
     }
     
@@ -59,7 +71,7 @@ extension NSTimeInterval {
     ///     - block:    Code in `block` will run once after delay.
     /// - returns: A new NSTimer instance
     public func delay(block: () -> Void) -> NSTimer {
-        let timer = self.timer(repeats: false, block)
+        let timer = self.timer(repeats: false, delays: true, block)
         timer.start()
         return timer
     }
@@ -70,7 +82,7 @@ extension NSTimeInterval {
     ///     - block:    Code in `block` will run once after delay. (NSTimer available as parameter in `block`)
     /// - returns: A new NSTimer instance
     public func delay(block: (NSTimer) -> Void) -> NSTimer {
-        let timer = self.timer(repeats: false, block)
+        let timer = self.timer(repeats: false, delays: true, block)
         timer.start()
         return timer
     }
@@ -81,9 +93,8 @@ extension NSTimeInterval {
     ///     - block:    Code in `block` will run in every timer repetition.
     /// - returns: A new NSTimer instance
     public func interval(block: () -> Void) -> NSTimer {
-        let timer = self.timer(repeats: true, block)
+        let timer = self.timer(repeats: true, delays: false, block)
         timer.start()
-        block()
         return timer
     }
     
@@ -93,9 +104,8 @@ extension NSTimeInterval {
     ///     - block:    Code in `block` will run in every timer repetition. (NSTimer available as parameter in `block`)
     /// - returns: A new NSTimer instance
     public func interval(block: (NSTimer) -> Void) -> NSTimer {
-        let timer = self.timer(repeats: true, block)
+        let timer = self.timer(repeats: true, delays: false, block)
         timer.start()
-        block(timer)
         return timer
     }
     
@@ -105,7 +115,7 @@ extension NSTimeInterval {
     ///     - block:    Code in `block` will run in every timer repetition.
     /// - returns: A new NSTimer instance
     public func delayedInterval(block: () -> Void) -> NSTimer {
-        let timer = self.timer(repeats: true, block)
+        let timer = self.timer(repeats: true, delays: true, block)
         timer.start()
         return timer
     }
@@ -116,7 +126,7 @@ extension NSTimeInterval {
     ///     - block:    Code in `block` will run in every timer repetition. (NSTimer available as parameter in `block`)
     /// - returns: A new NSTimer instance
     public func delayedInterval(block: (NSTimer) -> Void) -> NSTimer {
-        let timer = self.timer(repeats: true, block)
+        let timer = self.timer(repeats: true, delays: true, block)
         timer.start()
         return timer
     }
@@ -137,8 +147,8 @@ extension NSTimer {
         }
     }
     
-    /// Cancel this timer
-    public func cancel() {
+    /// Stop this timer
+    public func stop() {
         self.invalidate()
     }
 }

@@ -14,16 +14,39 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // EXAMPLES
+        
+        // Repeat but also execute once immediately
         2.second.interval {
-            print("repeating every two seconds")
+            print("Repeat every 2 seconds but also execute once right away.")
         }
         
-        let timer = 2.second.delayedInterval { () -> Void in
-            print("delayed repeat")
+        2.second.interval { (timer: NSTimer) -> Void in
+            print("Repeat every 2 seconds but also execute once right away.")
         }
-        timer.cancel()
+        
+        // Repeat after delay
+        let timer2 = 2.second.delayedInterval { () -> Void in
+            print("Repeat every 2 seconds after 2 second delay.")
+        }
+        timer2.stop()
+        
+        // Delay something
+        2.second.delay { () -> Void in
+            print("2 seconds later...")
+        }
+        
+        // Essentially equivalent to delayedInterval
+        let timer = 3.minute.timer(repeats: true, delays: true) {
+            print("3 minutes later...")
+        }
+        timer.start()
     }
 
+    func doSomething() {
+        print("Hello")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
