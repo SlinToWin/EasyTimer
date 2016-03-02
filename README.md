@@ -1,7 +1,7 @@
 # EasyTimer
 #####Natural language syntax for an easy way to use `NSTimer` in Swift for delaying code or repeating code.
 
-Heavily influenced by [SwiftyTimer](https://github.com/radex/SwiftyTimer) - Author: Radek Pietruszewski - [radex](https://github.com/radex)
+Heavily influenced by [SwiftyTimer](https://github.com/radex/SwiftyTimer) - Author: [Radek Pietruszewski (radex)](https://github.com/radex)
 
 ## Installation
 
@@ -97,7 +97,7 @@ timer.stop()
 [Niklas Fahl (fahlout)](http://bit.ly/fahlout) - iOS Developer ([LinkedIn](http://bit.ly/linked-in-niklas-fahl))
 
 #### Credits
-[SwiftyTimer](https://github.com/radex/SwiftyTimer) by Radek Pietruszewski - [radex](https://github.com/radex)
+[SwiftyTimer](https://github.com/radex/SwiftyTimer) by [Radek Pietruszewski (radex)](https://github.com/radex)
 
 ## License
 Copyright (c) 2012 The Board of Trustees of The University of Alabama
