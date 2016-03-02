@@ -16,12 +16,12 @@ Schedule a timer that will repeat and call block immediately
 ```swift
 // Will repeat code in block every 2 seconds starting immediately
 2.second.interval {
-  print("Repeat immediately!")
+    print("Repeat immediately!")
 }
 
 // or with timer passed to the block
 2.second.interval { (timer: NSTimer) -> Void in
-  print("Repeat immediately! Do something with timer.")
+    print("Repeat immediately! Do something with timer.")
 }
 ```
 
@@ -29,12 +29,12 @@ Schedule a timer that will repeat and call block after time interval delay
 ```swift
 // Will repeat code in block every 2 seconds after a 2 second delay
 2.second.delayedInterval {
-  print("Repeat after delay!")
+    print("Repeat after delay!")
 }
 
 // or with timer passed to the block
 2.second.delayedInterval { (timer: NSTimer) -> Void in
-  print("Repeat after delay! Do something with timer.")
+    print("Repeat after delay! Do something with timer.")
 }
 ```
 
@@ -42,16 +42,24 @@ Schedule a timer that will call block once after time interval
 ```swift
 // Will execute code in block once after 2 second delay
 2.second.delay {
-  print("Delay ended!")
+    print("Delay ended!")
 }
 
 // or with timer passed to the block
 2.second.delay { (timer: NSTimer) -> Void in
-  print("Delay ended! Do something with timer.")
+    print("Delay ended! Do something with timer.")
 }
 ```
 
-Call `start()` to schedule timers created using `timer(repeats, block)`. You can optionally pass the run loop and run loop modes:
+You can also choose to create a timer and start it later using `timer(repeats:, delays:)` which will return a newly created NSTimer instance
+
+```swift
+let timer = 3.minute.timer(repeats: true, delays: true) {
+    print("Do something.")
+}
+```
+
+Call `start()` to schedule timers created using `timer(repeats:, delays:)`. You can optionally pass the run loop and run loop modes:
 
 ```swift
 timer.start()
