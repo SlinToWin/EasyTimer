@@ -51,6 +51,13 @@ Schedule a timer that will call block once after time interval
 }
 ```
 
+Call `start()` to schedule timers created using `timer(repeats, block)`. You can optionally pass the run loop and run loop modes:
+
+```swift
+timer.start()
+timer.start(modes: NSDefaultRunLoopMode, NSEventTrackingRunLoopMode)
+```
+
 ## Author and License
 
 #### Author
