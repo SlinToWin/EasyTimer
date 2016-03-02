@@ -71,6 +71,11 @@ You can also choose to create a timer and start it later using `timer(repeats:, 
 let timer = 3.minute.timer(repeats: true, delays: true) {
     print("Do something.")
 }
+
+// or with timer passed to the block
+let timer = 3.minute.timer(repeats: true, delays: true) { (timer: NSTimer) -> Void in
+    print("Do something with timer.")
+}
 ```
 
 Call `start()` to schedule timers created using `timer(repeats:, delays:)`. You can optionally pass the run loop and run loop modes:
