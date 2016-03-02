@@ -10,7 +10,7 @@ Add the files in the 'Sources' folder to your project and you will be ready to g
 
 ## Usage
 
-You can easily schedule three types of timers (repeating, repeating with delay, and delay)
+You can easily schedule three types of timers (repeating, repeating with delay, and delay) - Each of these will return a new NSTimer instance
 
 Schedule a timer that will repeat and call block immediately
 ```swift
@@ -56,6 +56,12 @@ Call `start()` to schedule timers created using `timer(repeats, block)`. You can
 ```swift
 timer.start()
 timer.start(modes: NSDefaultRunLoopMode, NSEventTrackingRunLoopMode)
+```
+
+Call `stop()` to invalidate a timer
+
+```swift
+timer.stop()
 ```
 
 ## Author and License
