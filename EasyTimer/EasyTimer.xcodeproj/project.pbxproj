@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A7249E81C8773B70068C25A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7249E71C8773B70068C25A /* AppDelegate.swift */; };
+		6A7249EA1C8773B70068C25A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7249E91C8773B70068C25A /* ViewController.swift */; };
+		6A7249ED1C8773B70068C25A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7249EB1C8773B70068C25A /* Main.storyboard */; };
+		6A7249EF1C8773B70068C25A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A7249EE1C8773B70068C25A /* Assets.xcassets */; };
+		6A7249F21C8773B70068C25A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7249F01C8773B70068C25A /* LaunchScreen.storyboard */; };
+		6A7249FD1C8773B70068C25A /* EasyTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7249FC1C8773B70068C25A /* EasyTimerTests.swift */; };
+		6A903B361C8795650061E83B /* EasyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A903B341C8795650061E83B /* EasyTimer.swift */; };
+		6A903B371C8795650061E83B /* EasyTimerTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A903B351C8795650061E83B /* EasyTimerTimeInterval.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A7249F91C8773B70068C25A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A7249DC1C8773B70068C25A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A7249E31C8773B70068C25A;
+			remoteInfo = EasyTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A7249E41C8773B70068C25A /* EasyTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7249E71C8773B70068C25A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A7249E91C8773B70068C25A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A7249EC1C8773B70068C25A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A7249EE1C8773B70068C25A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A7249F11C8773B70068C25A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A7249F31C8773B70068C25A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A7249F81C8773B70068C25A /* EasyTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7249FC1C8773B70068C25A /* EasyTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTimerTests.swift; sourceTree = "<group>"; };
+		6A7249FE1C8773B70068C25A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A903B341C8795650061E83B /* EasyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyTimer.swift; path = ../../Sources/EasyTimer.swift; sourceTree = "<group>"; };
+		6A903B351C8795650061E83B /* EasyTimerTimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyTimerTimeInterval.swift; path = ../../Sources/EasyTimerTimeInterval.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A7249E11C8773B70068C25A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A7249F51C8773B70068C25A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A7249DB1C8773B70068C25A = {
+			isa = PBXGroup;
+			children = (
+				6A7249E61C8773B70068C25A /* EasyTimer */,
+				6A7249FB1C8773B70068C25A /* EasyTimerTests */,
+				6A7249E51C8773B70068C25A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A7249E51C8773B70068C25A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A7249E41C8773B70068C25A /* EasyTimer.app */,
+				6A7249F81C8773B70068C25A /* EasyTimerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A7249E61C8773B70068C25A /* EasyTimer */ = {
+			isa = PBXGroup;
+			children = (
+				6A724A071C8773BE0068C25A /* Source */,
+				6A7249E71C8773B70068C25A /* AppDelegate.swift */,
+				6A7249E91C8773B70068C25A /* ViewController.swift */,
+				6A7249EB1C8773B70068C25A /* Main.storyboard */,
+				6A7249EE1C8773B70068C25A /* Assets.xcassets */,
+				6A7249F01C8773B70068C25A /* LaunchScreen.storyboard */,
+				6A7249F31C8773B70068C25A /* Info.plist */,
+			);
+			path = EasyTimer;
+			sourceTree = "<group>";
+		};
+		6A7249FB1C8773B70068C25A /* EasyTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A7249FC1C8773B70068C25A /* EasyTimerTests.swift */,
+				6A7249FE1C8773B70068C25A /* Info.plist */,
+			);
+			path = EasyTimerTests;
+			sourceTree = "<group>";
+		};
+		6A724A071C8773BE0068C25A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6A903B341C8795650061E83B /* EasyTimer.swift */,
+				6A903B351C8795650061E83B /* EasyTimerTimeInterval.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A7249E31C8773B70068C25A /* EasyTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A724A011C8773B70068C25A /* Build configuration list for PBXNativeTarget "EasyTimer" */;
+			buildPhases = (
+				6A7249E01C8773B70068C25A /* Sources */,
+				6A7249E11C8773B70068C25A /* Frameworks */,
+				6A7249E21C8773B70068C25A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyTimer;
+			productName = EasyTimer;
+			productReference = 6A7249E41C8773B70068C25A /* EasyTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A7249F71C8773B70068C25A /* EasyTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A724A041C8773B70068C25A /* Build configuration list for PBXNativeTarget "EasyTimerTests" */;
+			buildPhases = (
+				6A7249F41C8773B70068C25A /* Sources */,
+				6A7249F51C8773B70068C25A /* Frameworks */,
+				6A7249F61C8773B70068C25A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A7249FA1C8773B70068C25A /* PBXTargetDependency */,
+			);
+			name = EasyTimerTests;
+			productName = EasyTimerTests;
+			productReference = 6A7249F81C8773B70068C25A /* EasyTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A7249DC1C8773B70068C25A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "High Bay";
+				TargetAttributes = {
+					6A7249E31C8773B70068C25A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					6A7249F71C8773B70068C25A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 6A7249E31C8773B70068C25A;
+					};
+				};
+			};
+			buildConfigurationList = 6A7249DF1C8773B70068C25A /* Build configuration list for PBXProject "EasyTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A7249DB1C8773B70068C25A;
+			productRefGroup = 6A7249E51C8773B70068C25A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A7249E31C8773B70068C25A /* EasyTimer */,
+				6A7249F71C8773B70068C25A /* EasyTimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A7249E21C8773B70068C25A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7249F21C8773B70068C25A /* LaunchScreen.storyboard in Resources */,
+				6A7249EF1C8773B70068C25A /* Assets.xcassets in Resources */,
+				6A7249ED1C8773B70068C25A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A7249F61C8773B70068C25A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A7249E01C8773B70068C25A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A903B361C8795650061E83B /* EasyTimer.swift in Sources */,
+				6A903B371C8795650061E83B /* EasyTimerTimeInterval.swift in Sources */,
+				6A7249EA1C8773B70068C25A /* ViewController.swift in Sources */,
+				6A7249E81C8773B70068C25A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A7249F41C8773B70068C25A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7249FD1C8773B70068C25A /* EasyTimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A7249FA1C8773B70068C25A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A7249E31C8773B70068C25A /* EasyTimer */;
+			targetProxy = 6A7249F91C8773B70068C25A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A7249EB1C8773B70068C25A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A7249EC1C8773B70068C25A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A7249F01C8773B70068C25A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A7249F11C8773B70068C25A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A7249FF1C8773B70068C25A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A724A001C8773B70068C25A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A724A021C8773B70068C25A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EasyTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ua.highbay.EasyTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6A724A031C8773B70068C25A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EasyTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ua.highbay.EasyTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6A724A051C8773B70068C25A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EasyTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ua.highbay.EasyTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyTimer.app/EasyTimer";
+			};
+			name = Debug;
+		};
+		6A724A061C8773B70068C25A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EasyTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ua.highbay.EasyTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyTimer.app/EasyTimer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A7249DF1C8773B70068C25A /* Build configuration list for PBXProject "EasyTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A7249FF1C8773B70068C25A /* Debug */,
+				6A724A001C8773B70068C25A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A724A011C8773B70068C25A /* Build configuration list for PBXNativeTarget "EasyTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A724A021C8773B70068C25A /* Debug */,
+				6A724A031C8773B70068C25A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A724A041C8773B70068C25A /* Build configuration list for PBXNativeTarget "EasyTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A724A051C8773B70068C25A /* Debug */,
+				6A724A061C8773B70068C25A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A7249DC1C8773B70068C25A /* Project object */;
+}
