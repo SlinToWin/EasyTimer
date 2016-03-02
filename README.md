@@ -10,6 +10,20 @@ Add the files in the 'Sources' folder to your project and you will be ready to g
 
 ## Usage
 
+All EasyTimer functions are called upon a NSTimerInterval, which can be represented ruby style.
+```swift
+1.millisecond
+1.3.millisecond
+2.second
+2.4.second
+3.minute
+3.5.minute
+4.hour
+4.6.hour
+5.day
+5.7.day
+```
+
 You can easily schedule three types of timers (repeating, repeating with delay, and delay) - Each of these will return a new NSTimer instance
 
 Schedule a timer that will repeat and call block immediately
