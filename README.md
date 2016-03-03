@@ -100,7 +100,7 @@ timer.stop()
 [SwiftyTimer](https://github.com/radex/SwiftyTimer) by [Radek Pietruszewski (radex)](https://github.com/radex)
 
 ## License
-Copyright (c) 2012 The Board of Trustees of The University of Alabama
+Copyright (c) 2016 The Board of Trustees of The University of Alabama
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
