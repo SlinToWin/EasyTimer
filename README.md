@@ -8,6 +8,12 @@ Heavily influenced by [SwiftyTimer](https://github.com/radex/SwiftyTimer) - Auth
 #### Manually
 Add the files in the 'Sources' folder to your project and you will be ready to go!
 
+#### CocoaPods
+Coming soon.
+
+#### Carthage
+Coming soon.
+
 ## Usage
 
 All EasyTimer functions are called upon a NSTimerInterval, which can be represented ruby style.
