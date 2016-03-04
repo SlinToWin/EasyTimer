@@ -147,8 +147,16 @@ extension NSTimer {
         }
     }
     
-    /// Stop this timer
-    public func stop() {
+    /// Remove this timer from the run loop
+    ///
+    /// By default, the timer is removed from the current run loop for the default mode.
+    /// Specify `runLoop` or `modes` to override these defaults.
+    public func stop(runLoop runLoop: NSRunLoop = NSRunLoop.currentRunLoop(), modes: String...) {
         self.invalidate()
+        let modes = modes.isEmpty ? [NSDefaultRunLoopMode] : modes
+        
+        for mode in modes {
+            CFRunLoopRemoveTimer(runLoop.getCFRunLoop(), self, mode)
+        }
     }
 }
