@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/HighBay/EasyTimer.svg?branch=master)](https://travis-ci.org/HighBay/EasyTimer)
+
 # EasyTimer
 #####Natural language syntax for an easy way to use `NSTimer` in Swift for delaying code or repeating code.
 
