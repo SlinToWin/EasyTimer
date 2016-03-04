@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/HighBay/EasyTimer.svg?branch=master)](https://travis-ci.org/HighBay/EasyTimer)
-
 # EasyTimer
 ![Platforms](https://img.shields.io/badge/platforms-ios%20%7C%20osx%20%7C%20watchos%20%7C%20tvos-lightgrey.svg)
 [![Build Status](https://travis-ci.org/HighBay/EasyTimer.svg?branch=master)](https://travis-ci.org/HighBay/EasyTimer)
