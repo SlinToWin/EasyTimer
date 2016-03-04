@@ -91,10 +91,11 @@ timer.start()
 timer.start(modes: NSDefaultRunLoopMode, NSEventTrackingRunLoopMode)
 ```
 
-Call `stop()` to invalidate a timer
+Call `stop()` to invalidate timers and remove them from the run loop. You can optionally pass the run loop and run loop modes:
 
 ```swift
 timer.stop()
+timer.stop(modes: NSDefaultRunLoopMode, NSEventTrackingRunLoopMode)
 ```
 
 ## Author and Credits
