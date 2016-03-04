@@ -1,9 +1,9 @@
 # EasyTimer
 ![Platforms](https://img.shields.io/badge/platforms-ios%20%7C%20osx%20%7C%20watchos%20%7C%20tvos-lightgrey.svg)
+![Swift version](https://img.shields.io/badge/swift-2.1-orange.svg)
 [![Build Status](https://travis-ci.org/HighBay/EasyTimer.svg?branch=master)](https://travis-ci.org/HighBay/EasyTimer)
 [![CocoaPods](http://img.shields.io/cocoapods/v/SwiftyTimer.svg)](https://cocoapods.org/pods/EasyTimer)
 <!---[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](#carthage)-->
-![Swift version](https://img.shields.io/badge/swift-2.1-orange.svg)
 
 #####Natural language syntax for an easy way to use `NSTimer` in Swift for delaying code or repeating code.
 
