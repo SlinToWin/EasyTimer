@@ -1,7 +1,7 @@
 language: objective-c
+xcode_project: EasyTimer.xcodeproj # path to your xcodeproj folder
+xcode_scheme: EasyTimerTests
 before_install:
   - pip install codecov
 after_success:
   - codecov
-script: 
-  - xctool -project EasyTimer.xcodeproj -scheme EasyTimerTests build test -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
