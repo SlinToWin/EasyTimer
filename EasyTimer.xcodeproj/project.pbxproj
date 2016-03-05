@@ -38,8 +38,8 @@
 		6A7249F81C8773B70068C25A /* EasyTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7249FC1C8773B70068C25A /* EasyTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTimerTests.swift; sourceTree = "<group>"; };
 		6A7249FE1C8773B70068C25A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A903B341C8795650061E83B /* EasyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyTimer.swift; path = ../../Sources/EasyTimer.swift; sourceTree = "<group>"; };
-		6A903B351C8795650061E83B /* EasyTimerTimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyTimerTimeInterval.swift; path = ../../Sources/EasyTimerTimeInterval.swift; sourceTree = "<group>"; };
+		6A903B341C8795650061E83B /* EasyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyTimer.swift; path = ../Sources/EasyTimer.swift; sourceTree = "<group>"; };
+		6A903B351C8795650061E83B /* EasyTimerTimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyTimerTimeInterval.swift; path = ../Sources/EasyTimerTimeInterval.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +160,7 @@
 				TargetAttributes = {
 					6A7249E31C8773B70068C25A = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7N7CGSK8P8;
 					};
 					6A7249F71C8773B70068C25A = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -343,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EasyTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.ua.highbay.EasyTimer;
@@ -354,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = EasyTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.ua.highbay.EasyTimer;
