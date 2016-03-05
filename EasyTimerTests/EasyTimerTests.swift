@@ -88,12 +88,12 @@ class EasyTimerTests: XCTestCase {
         let timer = 3.second.timer(repeats: false, delays: false) { 
             let delayTime = CFAbsoluteTimeGetCurrent() - startTimeStamp
             let intervalTolerance = abs(0 - delayTime)
-            XCTAssertLessThan(intervalTolerance, 0.01)
+            XCTAssertLessThan(intervalTolerance, 0.02)
             expectation.fulfill()
         }
         timer.start()
         
-        waitForExpectationsWithTimeout(0.01) { error in
+        waitForExpectationsWithTimeout(0.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -112,13 +112,13 @@ class EasyTimerTests: XCTestCase {
             
             if count == 2 {
                 let intervalTolerance = abs(3 - intervalTime)
-                XCTAssertLessThan(intervalTolerance, 0.01)
+                XCTAssertLessThan(intervalTolerance, 0.02)
                 expectation.fulfill()
             }
         }
         timer.start()
         
-        waitForExpectationsWithTimeout(3.01) { error in
+        waitForExpectationsWithTimeout(3.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -133,12 +133,12 @@ class EasyTimerTests: XCTestCase {
         let timer = 3.second.timer(repeats: false, delays: true) {
             let delayTime = CFAbsoluteTimeGetCurrent() - startTimeStamp
             let intervalTolerance = abs(3 - delayTime)
-            XCTAssertLessThan(intervalTolerance, 0.01)
+            XCTAssertLessThan(intervalTolerance, 0.02)
             expectation.fulfill()
         }
         timer.start()
         
-        waitForExpectationsWithTimeout(3.01) { error in
+        waitForExpectationsWithTimeout(3.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -157,13 +157,13 @@ class EasyTimerTests: XCTestCase {
             
             if count == 2 {
                 let intervalTolerance = abs(6 - intervalTime)
-                XCTAssertLessThan(intervalTolerance, 0.01)
+                XCTAssertLessThan(intervalTolerance, 0.02)
                 expectation.fulfill()
             }
         }
         timer.start()
         
-        waitForExpectationsWithTimeout(6.01) { error in
+        waitForExpectationsWithTimeout(6.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -178,12 +178,12 @@ class EasyTimerTests: XCTestCase {
         let timer = 3.second.timer(repeats: false, delays: false) { (timer: NSTimer) -> Void in
             let delayTime = CFAbsoluteTimeGetCurrent() - startTimeStamp
             let intervalTolerance = abs(0 - delayTime)
-            XCTAssertLessThan(intervalTolerance, 0.01)
+            XCTAssertLessThan(intervalTolerance, 0.02)
             expectation.fulfill()
         }
         timer.start()
         
-        waitForExpectationsWithTimeout(0.01) { error in
+        waitForExpectationsWithTimeout(0.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -202,13 +202,13 @@ class EasyTimerTests: XCTestCase {
             
             if count == 2 {
                 let intervalTolerance = abs(3 - intervalTime)
-                XCTAssertLessThan(intervalTolerance, 0.01)
+                XCTAssertLessThan(intervalTolerance, 0.02)
                 expectation.fulfill()
             }
         }
         timer.start()
         
-        waitForExpectationsWithTimeout(3.01) { error in
+        waitForExpectationsWithTimeout(3.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -223,12 +223,12 @@ class EasyTimerTests: XCTestCase {
         let timer = 3.second.timer(repeats: false, delays: true) { (timer: NSTimer) -> Void in
             let delayTime = CFAbsoluteTimeGetCurrent() - startTimeStamp
             let intervalTolerance = abs(3 - delayTime)
-            XCTAssertLessThan(intervalTolerance, 0.01)
+            XCTAssertLessThan(intervalTolerance, 0.02)
             expectation.fulfill()
         }
         timer.start()
         
-        waitForExpectationsWithTimeout(3.01) { error in
+        waitForExpectationsWithTimeout(3.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -247,13 +247,13 @@ class EasyTimerTests: XCTestCase {
             
             if count == 2 {
                 let intervalTolerance = abs(6 - intervalTime)
-                XCTAssertLessThan(intervalTolerance, 0.01)
+                XCTAssertLessThan(intervalTolerance, 0.02)
                 expectation.fulfill()
             }
         }
         timer.start()
         
-        waitForExpectationsWithTimeout(6.01) { error in
+        waitForExpectationsWithTimeout(6.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -277,11 +277,11 @@ class EasyTimerTests: XCTestCase {
         2.second.delay {
             let delayTime = CFAbsoluteTimeGetCurrent() - startTimeStamp
             let delayTolerance = abs(2 - delayTime)
-            XCTAssertLessThan(delayTolerance, 0.01)
+            XCTAssertLessThan(delayTolerance, 0.02)
             expectation.fulfill()
         }
         
-        waitForExpectationsWithTimeout(2.01) { error in
+        waitForExpectationsWithTimeout(2.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -295,11 +295,11 @@ class EasyTimerTests: XCTestCase {
         5.second.delay { (timer: NSTimer) -> Void in
             let delayTime = CFAbsoluteTimeGetCurrent() - startTimeStamp
             let delayTolerance = abs(5 - delayTime)
-            XCTAssertLessThan(delayTolerance, 0.01)
+            XCTAssertLessThan(delayTolerance, 0.02)
             expectation.fulfill()
         }
         
-        waitForExpectationsWithTimeout(5.01) { error in
+        waitForExpectationsWithTimeout(5.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -314,7 +314,7 @@ class EasyTimerTests: XCTestCase {
             expectation.fulfill()
         }
         
-        waitForExpectationsWithTimeout(5.01) { error in
+        waitForExpectationsWithTimeout(5.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -333,12 +333,12 @@ class EasyTimerTests: XCTestCase {
             
             if count == 2 {
                 let intervalTolerance = abs(3 - intervalTime)
-                XCTAssertLessThan(intervalTolerance, 0.01)
+                XCTAssertLessThan(intervalTolerance, 0.02)
                 expectation.fulfill()
             }
         }
         
-        waitForExpectationsWithTimeout(3.01) { error in
+        waitForExpectationsWithTimeout(3.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -356,12 +356,12 @@ class EasyTimerTests: XCTestCase {
             
             if count == 2 {
                 let intervalTolerance = abs(3 - intervalTime)
-                XCTAssertLessThan(intervalTolerance, 0.01)
+                XCTAssertLessThan(intervalTolerance, 0.02)
                 expectation.fulfill()
             }
         }
         
-        waitForExpectationsWithTimeout(3.01) { error in
+        waitForExpectationsWithTimeout(3.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -376,7 +376,7 @@ class EasyTimerTests: XCTestCase {
             expectation.fulfill()
         }
         
-        waitForExpectationsWithTimeout(0.01) { error in
+        waitForExpectationsWithTimeout(0.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -395,12 +395,12 @@ class EasyTimerTests: XCTestCase {
             
             if count == 2 {
                 let intervalTolerance = abs(6 - intervalTime)
-                XCTAssertLessThan(intervalTolerance, 0.01)
+                XCTAssertLessThan(intervalTolerance, 0.02)
                 expectation.fulfill()
             }
         }
         
-        waitForExpectationsWithTimeout(6.01) { error in
+        waitForExpectationsWithTimeout(6.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -418,12 +418,12 @@ class EasyTimerTests: XCTestCase {
             
             if count == 2 {
                 let intervalTolerance = abs(6 - intervalTime)
-                XCTAssertLessThan(intervalTolerance, 0.01)
+                XCTAssertLessThan(intervalTolerance, 0.02)
                 expectation.fulfill()
             }
         }
         
-        waitForExpectationsWithTimeout(6.01) { error in
+        waitForExpectationsWithTimeout(6.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
@@ -438,7 +438,7 @@ class EasyTimerTests: XCTestCase {
             expectation.fulfill()
         }
         
-        waitForExpectationsWithTimeout(5.01) { error in
+        waitForExpectationsWithTimeout(5.02) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
