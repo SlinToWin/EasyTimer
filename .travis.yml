@@ -1,7 +1,7 @@
 language: objective-c
 
 before_install: 
-  - pip install codecov
+  - sudo pip install codecov
 
 script: 
 - xctool clean build -project EasyTimer.xcodeproj -scheme EasyTimer CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
