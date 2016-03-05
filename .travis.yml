@@ -1,2 +1,2 @@
 language: objective-c
-xctool -project EasyTimer.xcodeproj -target EasyTimerTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+xctool test -project EasyTimer.xcodeproj -target EasyTimerTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
