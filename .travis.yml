@@ -1,9 +1,11 @@
 language: objective-c
 
 before_install: 
-- brew update
-- if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
+  - pip install codecov
 
 script: 
 - xctool clean build -project EasyTimer.xcodeproj -scheme EasyTimer CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-- xctool test -project EasyTimer.xcodeproj -scheme EasyTimerTests
+- xctool test -project EasyTimer.xcodeproj -scheme EasyTimerTests CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+
+after_success:
+  - codecov
