@@ -1,5 +1,3 @@
 language: objective-c
-script: 
-  - xctool -project EasyTimer.xcodeproj -scheme EasyTimerTests build test -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+script:
+  - xctool test -project EasyTimer.xcodeproj -target EasyTimerTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
