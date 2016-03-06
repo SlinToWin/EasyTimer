@@ -1,8 +1,21 @@
 language: objective-c
 osx_image: xcode7.2
+xcode_project: EasyTimer.xcodeproj
+xcode_scheme: EasyTimerTests
 
-#script: ./travis-ci-script.sh
 script:
-  - xctool -project EasyTimer.xcodeproj -scheme EasyTimerTests build test -sdk iphonesimulator9.2 CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+    - set -o pipefail
+        &&
+        xcodebuild -verbose
+        -project EasyTimer.xcodeproj
+        -scheme EasyTimerTests
+        -sdk iphonesimulator9.2
+        clean build test
+        -enableCodeCoverage YES
+        CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+        | xcpretty -c
+#script: ./travis-ci-script.sh
+#script:
+#  - xctool -project EasyTimer.xcodeproj -scheme EasyTimerTests build test -sdk iphonesimulator9.2 CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 after_success:
   - bash <(curl -s https://codecov.io/bash)
