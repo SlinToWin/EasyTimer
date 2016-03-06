@@ -2,6 +2,6 @@ language: objective-c
 osx_image: xcode7.2
 
 script:
-  - xcodebuild -project EasyTimer.xcodeproj -scheme EasyTimerTests build test -sdk iphonesimulator9.2 -enableCodeCoverage YES CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+  - xcodebuild -project EasyTimer.xcodeproj -target EasyTimerTests build test -sdk iphonesimulator9.2 -enableCodeCoverage YES ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 after_success:
   - bash <(curl -s https://codecov.io/bash)
