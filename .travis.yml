@@ -4,16 +4,7 @@ xcode_project: EasyTimer.xcodeproj
 xcode_scheme: EasyTimerTests
 
 script:
-    - set -o pipefail
-        &&
-        xcodebuild -verbose
-        -project EasyTimer.xcodeproj
-        -scheme EasyTimerTests
-        -sdk iphonesimulator9.2
-        clean build test
-        -enableCodeCoverage YES
-        CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-        | xcpretty -c
+  - xcodebuild -project EasyTimer.xcodeproj -scheme EasyTimerTests -sdk iphonesimulator9.2 clean build test -enableCodeCoverage YES CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
 #script: ./travis-ci-script.sh
 #script:
 #  - xctool -project EasyTimer.xcodeproj -scheme EasyTimerTests build test -sdk iphonesimulator9.2 CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
