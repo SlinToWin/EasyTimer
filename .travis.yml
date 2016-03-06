@@ -9,7 +9,7 @@ script:
         xcodebuild -verbose
         -project EasyTimer.xcodeproj
         -scheme EasyTimerTests
-        -sdk iphonesimulator9.2
+        -sdk iphonesimulator
         clean build test
         -enableCodeCoverage YES
         CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
