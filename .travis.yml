@@ -5,8 +5,6 @@ xcode_scheme: EasyTimerTests
 
 script:
   - xcodebuild -project EasyTimer.xcodeproj -scheme EasyTimerTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.2'  clean build test -enableCodeCoverage YES CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
-#script: ./travis-ci-script.sh
-#script:
-#  - xctool -project EasyTimer.xcodeproj -scheme EasyTimerTests build test -sdk iphonesimulator9.2 CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+
 after_success:
   - bash <(curl -s https://codecov.io/bash)
