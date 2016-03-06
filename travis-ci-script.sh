@@ -1,6 +1,6 @@
 #! /bin/bash
 
-TEST_CMD="xcodebuild -scheme EasyTimerTests -workspace EasyTimer.xcworkspace build test -sdk iphonesimulator9.2 CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO"
+TEST_CMD="xcodebuild -scheme EasyTimerTests -project EasyTimer.xcodeproj build test -sdk iphonesimulator9.2 CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO"
 
 which -s xcpretty
 XCPRETTY_INSTALLED=$?
