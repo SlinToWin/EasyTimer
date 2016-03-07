@@ -4,7 +4,6 @@
 [![Build Status](https://travis-ci.org/HighBay/EasyTimer.svg?branch=master)](https://travis-ci.org/HighBay/EasyTimer)
 [![codecov.io](http://codecov.io/github/HighBay/EasyTimer/coverage.svg?branch=master)](http://codecov.io/github/HighBay/EasyTimer?branch=master)
 [![CocoaPods](http://img.shields.io/cocoapods/v/EasyTimer.svg)](https://cocoapods.org/pods/EasyTimer)
-<!---[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](#carthage)-->
 
 #####Natural language syntax for an easy way to use `NSTimer` in Swift for delaying code or repeating code.
 
@@ -23,9 +22,6 @@ To install add the following line to your Podfile:
 ```ruby
 pod 'EasyTimer'
 ```
-
-#### Carthage
-Coming soon.
 
 ## Usage
 
