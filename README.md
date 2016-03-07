@@ -16,7 +16,11 @@ Heavily influenced by [SwiftyTimer](https://github.com/radex/SwiftyTimer) - Auth
 Add the files in the 'Sources' folder to your project and you will be ready to go!
 
 #### CocoaPods
-Coming soon.
+EasyTimer is available through [CocoaPods](http://cocoapods.org).
+
+To install add the following line to your Podfile:
+
+    pod 'EasyTimer'
 
 #### Carthage
 Coming soon.
