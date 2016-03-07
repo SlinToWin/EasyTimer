@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'EasyTimer'
-  s.version = '1.0.1'
+  s.version = 'v1.0.1'
   s.license = { :type => 'UA', :file => 'LICENSE' }
   s.summary = 'Easy way to use NSTimer in Swift for delaying code or repeating code'
   s.homepage = 'https://github.com/highbay/EasyTimer'
