@@ -21,7 +21,7 @@ class ViewController: UIViewController {
             print("Repeat every 2 seconds but also execute once right away.")
         }
         
-        2.second.interval { (timer: NSTimer) -> Void in
+        2.second.interval { (timer: Timer) -> Void in
             print("Repeat every 2 seconds but also execute once right away.")
         }
         
